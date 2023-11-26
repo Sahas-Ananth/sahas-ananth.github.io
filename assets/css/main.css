@@ -167,14 +167,14 @@ img {
 .ds-social li a {
   border-radius: 100%;
   color: #fff;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: #f26464;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
 }
 .ds-social li a:hover {
   background-color: #000;
@@ -184,6 +184,7 @@ img {
   2. >>> Banner Style
 ----------------------------------------------------------------*/
 .ds-banner section {
+  margin-top: 40px;
   padding-left: 70px;
   padding-right: 100px;
 }
@@ -193,7 +194,6 @@ img {
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 16px;
-  padding-bottom: 30px;
 }
 .ds-banner section h1 {
   font-weight: 600;
@@ -229,9 +229,14 @@ img {
 /*-----------------------------------------------------------------
   3. >>> About Style
 ----------------------------------------------------------------*/
+.ds-anchor {
+  color: cornflowerblue;
+  text-decoration: underline;
+}
+
 .ds-about-section {
   padding-top: 60px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 .ds-heading {
   display: inline-block;
@@ -239,17 +244,18 @@ img {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 28px;
   border-bottom: 3px solid #f26464;
   padding-bottom: 7px;
   margin-bottom: 23px;
 }
 .ds-about-section p {
+  text-indent: 48px;
   color: #373737;
-  font-size: 24px;
+  font-size: 18px;
+  text-align: justify;
   line-height: 40px;
   font-weight: 300;
-  margin-bottom: 60px;
 }
 
 .ds-button {
@@ -264,6 +270,17 @@ img {
   border: 2px solid #f26464;
   border-radius: 60px;
 }
+
+.bs-button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 8px;
+  color: #f26464;
+  padding: 10px 16px;
+  border: 2px solid #f26464;
+  border-radius: 60px;
+}
 .ds-button:hover {
   background-color: #f26464;
   color: #fff;
@@ -272,6 +289,21 @@ img {
   display: inline-block;
   vertical-align: middle;
 }
+
+.ds-collapse-button[aria-expanded="true"] .if-not-collapsed {
+  display: none;
+}
+
+.ds-collapse-button[aria-expanded="false"] .if-collapsed {
+  display: none;
+}
+/* [data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+} */
+
 /*-----------------------------------------------------------------
   4. >>> Skills Style
 ----------------------------------------------------------------*/
@@ -336,6 +368,7 @@ span.ds-department {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  text-align: justify;
 }
 .ds-experience-list ul {
   list-style: none;
@@ -366,37 +399,56 @@ span.ds-department {
 ----------------------------------------------------------------*/
 .ds-work-section {
   padding-bottom: 80px;
+  text-align: justify;
 }
 .ds-work-list {
-  padding-left: 70px;
-  padding-top: 40px;
-  padding-right: 70px;
+  padding: 40px 70px;
   background-color: #f6f8fa;
   margin-bottom: 40px;
 }
 .ds-work-list section {
   padding-top: 20px;
-  padding-right: 120px;
+  padding-right: 50px;
 }
-.ds-work-tilte {
+.ds-work-title {
   color: #000;
   font-size: 30px;
   line-height: 36px;
   font-weight: 600;
   margin-bottom: 30px;
 }
+
+.ds-image-container {
+  margin: auto;
+}
+
 .ds-work-list p {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  text-align: justify;
+  text-indent: 36px;
 }
 .ds-work-list .ds-button {
   margin-top: 20px;
 }
 
+.wall-gif {
+  margin: auto;
+  max-height: 700px;
+}
+
+.result-image-container h3 {
+  font-size: 24px;
+}
+
+.result-fig {
+  margin: auto;
+  max-height: 600px;
+}
+
 .ds-work-det-hed {
-  padding-top: 42px;
-  padding-bottom: 80px;
+  padding: 45px 0;
 }
 .ds-work-det-title {
   font-weight: 600;
@@ -417,11 +469,32 @@ span.ds-department {
   font-size: 18px;
   line-height: 36px;
   margin-bottom: 30px;
+  text-align: justify;
+  text-indent: 40px;
 }
+
+.ds-work-content-sec pre {
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  color: orangered;
+  position: relative;
+}
+
+.ds-work-content-sec pre button{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  /* more stuff */
+}
+
 .ds-work-content-sec h2 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 30px;
+  width: fit-content;
 }
 .ds-work-content-sec ul {
   list-style: none;
@@ -450,10 +523,10 @@ span.ds-department {
 ----------------------------------------------------------------*/
 .ds-footer {
   background-color: #000;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .ds-footer section {
-  padding-bottom: 97px;
+  padding-bottom: 36px;
 }
 .ds-footer section span {
   color: rgba(255, 255, 255, 0.5);
@@ -582,6 +655,9 @@ span.ds-department {
   }
   .ds-button {
     padding: 11px 10px;
+  }
+  .bs-button {
+    padding: 8px 5px;
   }
   .ds-work-details-section {
     padding-top: 30px;
