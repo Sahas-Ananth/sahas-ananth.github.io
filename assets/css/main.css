@@ -692,3 +692,9 @@ span.ds-department {
     padding-bottom: 60px;
   }
 }
+
+
+/* Sahas CSS customiations */
+mark {
+  background-color: yellow;
+}

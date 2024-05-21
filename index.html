@@ -42,7 +42,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:anantharamakrishn.sa2northeastern.edu" target="_blank"><i class="ri-mail-fill"></i></a>
+            <a href="mailto:anantharamakrishn.sa@northeastern.edu" target="_blank"><i class="ri-mail-fill"></i></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/sahas-ananth/" target="_blank"><i class="ri-linkedin-fill"></i></a>
@@ -219,9 +219,10 @@
             <span class="ds-year">September 2022 - May 2024</span>
             <h3 class="ds-officename">Northeastern University</h3>
             <span class="ds-department">Master of Science Robotics Engineering.</span>
-            <span class="ds-department">GPA: 4.0</span>
+            <span class="ds-department">GPA: 3.939</span>
             <p>Courses taken:</p>
             <ul>
+              <li>EECE 7398 - Legged Robotics</li>
               <li>EECE 7323 - Numerical Optimization Methods</li>
               <li>MATH 7233 - Graph Theory</li>
               <li>EECE 7150 - Autonomous Field Robotics (Audit)</li>
@@ -263,64 +264,99 @@
       <div class="row ds-experience-list">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
           <section>
-            <span class="ds-year">January 2023 - Present</span>
+            <span class="ds-year">May 2024 - Present</span>
+            <h3 class="ds-officename">
+              <a target="_blank" href="https://robot.neu.edu/">Robotics and Intelligent Vehicles Research Laboratory
+                (RIVeR)</a>
+            </h3>
+            <span class="ds-department">Robotics Research Assistant</span>
+            <p><strong>Project:</strong> Stochastic Model Predictive Control for bipedal loco-manipulation</p>
+            <ul>
+              <li>Introduced probabilistic models into traditional MPC to create Stochastic MPC (SMPC), to improve
+                adaptability and robustness against uneven terrain and unexpected loads</li>
+              <li>Spearheaded the adaptation of the SMPC framework from quadrupedal to bipedal robots to demonstrate
+                its generalizability, using simulation platforms such as PyBullet and Gazebo</li>
+              <li>Refined the dynamics model and cost function to satisfy the constraints of the bipedal robot to
+                guarantee stability</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <section>
+            <span class="ds-year">January 2023 - May 2024</span>
             <h3 class="ds-officename">
               <a target="_blank" href="https://neu-autonomy.github.io/lab_website/">
-                Autonomy and Intelligence Laboratory
+                Northeastern Autonomy and Intelligence Laboratory (NAIL)
               </a>
             </h3>
-            <span class="ds-department">Graduate Research Assistant</span>
+            <span class="ds-department">Robotics Research Assistant</span>
             <p><strong>Project:</strong> High Speed Offroad Autonomy</p>
             <ul>
-              <li>
-                Modified and Fine-tuned STEGO, a self-supervised semantic
-                segmentation head, for DINOv1 vision transformer.
-                <ul class="ms-4">
-                  <li>
-                    Achieved clear class clusters for RGB image semantic
-                    segmentation
-                  </li>
-                  <li>
-                    Planned future incorporation of online learning in STEGO to
-                    increase robustness to unknown objects.
-                  </li>
-                </ul>
+              <li>Developed an innovative 2.5D terrain model accommodating uncertainties in both the shape and
+                properties of challenging off-road environment</li>
+              <li>Created and Optimized a custom MPPI algorithm using JAX python, slashing average run time from
+                <mark>1000 ms</mark> to
+                <mark>1 ms</mark>
               </li>
-              <li>
-                Employed sensor fusion techniques to combine 3D-LiDAR data
-                with semantically segmented RGB images, resulting in a
-                Semantic Point Cloud, essential for downstream perception,
-                control and motion planning tasks.
-              </li>
-              <li>
-                Improved the Direct LiDAR-Inertial Odometry (DLIO) algorithm
-                to accept semantic point cloud as additional input, enabling
-                the integration of semantic information derived from the
-                vision transformer model.
-              </li>
-              <li>
-                Developed a tailored navigation system encompassing
-                representation, planning, and control components for operation
-                in challenging, unstructured off-road terrain
-              </li>
-              <li>
-                Implemented MPC and MPPI algorithms, incorporating tailored
-                cost functions to ensure resilient planning and optimal
-                control in challenging off-road terrains.
-              </li>
+              <li>Crafted a custom cost function for MPPI controls, prioritizing speed in unstructured environments
+                while considering the robot's kino-dynamics, terrain traversability, and safety constraints</li>
+              <li>Fine-tuned STEGO, a self-supervised semantic segmentation head for DINOv1 vision transformer, on RUGD,
+                RELLIS, and a custom dataset to achieve clear class clusters for RGB image semantic segmentation</li>
+              <li>Employed sensor fusion techniques to combine 3D-LiDAR data with semantically segmented RGB images,
+                resulting in a Semantic Point Cloud, essential for downstream perception, control, and motion planning
+                tasks</li>
+              <li>Utilized Fusion 360 to engineer and assemble a customized compute and sensor suite payload, designed
+                to meet the distinct needs of AgileX's scout and Clearpath's Warthog robotic platforms, to enable
+                high-speed offroad autonomy capability</li>
+              <!-- <li> -->
+              <!--   Modified and Fine-tuned STEGO, a self-supervised semantic -->
+              <!--   segmentation head, for DINOv1 vision transformer. -->
+              <!--   <ul class="ms-4"> -->
+              <!--     <li> -->
+              <!--       Achieved clear class clusters for RGB image semantic -->
+              <!--       segmentation -->
+              <!--     </li> -->
+              <!--     <li> -->
+              <!--       Planned future incorporation of online learning in STEGO to -->
+              <!--       increase robustness to unknown objects. -->
+              <!--     </li> -->
+              <!--   </ul> -->
+              <!-- </li> -->
+              <!-- <li> -->
+              <!--   Employed sensor fusion techniques to combine 3D-LiDAR data -->
+              <!--   with semantically segmented RGB images, resulting in a -->
+              <!--   Semantic Point Cloud, essential for downstream perception, -->
+              <!--   control and motion planning tasks. -->
+              <!-- </li> -->
+              <!-- <li> -->
+              <!--   Improved the Direct LiDAR-Inertial Odometry (DLIO) algorithm -->
+              <!--   to accept semantic point cloud as additional input, enabling -->
+              <!--   the integration of semantic information derived from the -->
+              <!--   vision transformer model. -->
+              <!-- </li> -->
+              <!-- <li> -->
+              <!--   Developed a tailored navigation system encompassing -->
+              <!--   representation, planning, and control components for operation -->
+              <!--   in challenging, unstructured off-road terrain -->
+              <!-- </li> -->
+              <!-- <li> -->
+              <!--   Implemented MPC and MPPI algorithms, incorporating tailored -->
+              <!--   cost functions to ensure resilient planning and optimal -->
+              <!--   control in challenging off-road terrains. -->
+              <!-- </li> -->
               <!-- <li> -->
               <!--   Integrated SLAM (Simultaneous Localization and Mapping) and -->
               <!--   autonomous navigation algorithms, in both ROS1 and ROS2, -->
               <!--   enabling high-speed offroad autonomy capability in mobile -->
               <!--   robots. -->
               <!-- </li> -->
-              <li>
-                Utilized Fusion 360 to engineer and assemble a customized
-                compute and sensor suite payload, designed to meet the
-                distinct needs of AgileX's scout and Clearpath's Warthog
-                robotic platforms, to enable high-speed offroad autonomy
-                capability.
-              </li>
+              <!-- <li> -->
+              <!--   Utilized Fusion 360 to engineer and assemble a customized -->
+              <!--   compute and sensor suite payload, designed to meet the -->
+              <!--   distinct needs of AgileX's scout and Clearpath's Warthog -->
+              <!--   robotic platforms, to enable high-speed offroad autonomy -->
+              <!--   capability. -->
+              <!-- </li> -->
             </ul>
           </section>
         </div>
@@ -329,30 +365,36 @@
             <span class="ds-year">August 2021 - November 2021</span>
             <h3 class="ds-officename">Rigbetal Labs LLP</h3>
             <span class="ds-department">Robotics Engineer, Intern</span>
-            <!-- <p> -->
-            <!--   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis -->
-            <!--   quis sem maximus, ornare metus ut, congue enim. Sed fermentum. -->
-            <!-- </p> -->
             <ul>
-              <li>
-                Created a novel algorithm, Road Anomaly Detection System
-                (RADS), in C++ to detect road anomalies (Potholes, Speed
-                Bumps, etc.) using normal estimation
+              <li>Formulated a novel algorithm, Road Anomaly Detection System (RADS), in C++ to detect road anomalies
+                (Potholes, Speed Bumps, etc.) using normal estimation</li>
+              <li>Reduced cost by 90\%, by generating a 3D Point cloud from a series of moving 2D Laser scans</li>
+              <li>Simulated a multi-agent (robot) mapping environment in Gazebo ROS to create a cohesive 2D map
+                <ul>
+                  <li>Deployed the same in a cloud environment using AWS Robomaker to enable remote multi-user control
+                    of
+                    an agents</li>
+                </ul>
               </li>
-              <li>
-                Reduced cost by 90%, by generating a 3D Pointcloud from a
-                series of moving 2D Laserscans
-              </li>
-              <li>
-                Simulated a multi-agent (robot) mapping environment in Gazebo
-                ROS to create a cohesive 2D map
-              </li>
-              <ul>
-                <li>
-                  Tested viability of the same in a cloud environment (AWS
-                  Robomaker) to enable multi-user control of an agent
-                </li>
-              </ul>
+              <!--   <li> -->
+              <!--     Created a novel algorithm, Road Anomaly Detection System -->
+              <!--     (RADS), in C++ to detect road anomalies (Potholes, Speed -->
+              <!--     Bumps, etc.) using normal estimation -->
+              <!--   </li> -->
+              <!--   <li> -->
+              <!--     Reduced cost by 90%, by generating a 3D Pointcloud from a -->
+              <!--     series of moving 2D Laserscans -->
+              <!--   </li> -->
+              <!--   <li> -->
+              <!--     Simulated a multi-agent (robot) mapping environment in Gazebo -->
+              <!--     ROS to create a cohesive 2D map -->
+              <!--   </li> -->
+              <!--   <ul> -->
+              <!--     <li> -->
+              <!--       Tested viability of the same in a cloud environment (AWS -->
+              <!--       Robomaker) to enable multi-user control of an agent -->
+              <!--     </li> -->
+              <!--   </ul> -->
             </ul>
           </section>
         </div>
@@ -363,20 +405,20 @@
             <span class="ds-department">
               Robotics (Medical Devices), Intern
             </span>
-            <!-- <p> -->
-            <!--   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis -->
-            <!--   quis sem maximus, ornare metus ut, congue enim. Sed fermentum. -->
-            <!-- </p> -->
             <ul>
-              <li>
-                Designed in Fusion 360 a ROS-based autonomous ground vehicle
-                to sterilize and sanitize offices from SARS-COV2 virus with
-                Ultraviolet (UV-C) irradiation
-              </li>
-              <li>
-                Managed Communications and task delegation between the team
-                and the client
-              </li>
+              <li>Fabricated a ROS-based autonomous ground vehicle in Fusion 360 to sterilize and sanitize offices from
+                SARS-COV2 virus with Ultraviolet (UV-C) irradiation </li>
+              <li>Directed communication and task distribution between the team and clients, enhancing team efficiency
+                and client relations.</li>
+              <!--   <li> -->
+              <!--     Designed in Fusion 360 a ROS-based autonomous ground vehicle -->
+              <!--     to sterilize and sanitize offices from SARS-COV2 virus with -->
+              <!--     Ultraviolet (UV-C) irradiation -->
+              <!--   </li> -->
+              <!--   <li> -->
+              <!--     Managed Communications and task delegation between the team -->
+              <!--     and the client -->
+              <!--   </li> -->
             </ul>
           </section>
         </div>
@@ -443,7 +485,8 @@
                 </p>
                 <p>
                   A recent approach called
-                  <a target="_blank" class="ds-anchor" href="https://journals.sagepub.com/doi/pdf/10.1177/0278364919890396">Batch Informed
+                  <a target="_blank" class="ds-anchor"
+                    href="https://journals.sagepub.com/doi/pdf/10.1177/0278364919890396">Batch Informed
                     Trees (BIT*)</a>
                   combines the strengths of both search-based and
                   sampling-based planners. In this work, we have used the
@@ -487,7 +530,8 @@
                 </p>
                 <a href="assets/pdfs/CS_5180_Final_Project_Report_Sahasrajit_Anuj_Kenechi.pdf" target="_blank"
                   class="ds-button">Report</a>
-                <a href="https://github.com/Sahas-Ananth/RL-FinalProject" target="_blank" class="ds-button ms-3">Code</a>
+                <a href="https://github.com/Sahas-Ananth/RL-FinalProject" target="_blank"
+                  class="ds-button ms-3">Code</a>
               </section>
             </div>
             <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex">
@@ -589,8 +633,9 @@
         </ul>
       </section>
       <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by
-        <a href="https://designstub.com/" target="_blank">Designstub</a>. <br />Edited by <a class="ds-anchor" href="https://saravanankish.github.io">Saravanan K</a>.</span>
-        
+        <a href="https://designstub.com/" target="_blank">Designstub</a>. <br />Edited by <a class="ds-anchor"
+          href="https://saravanankish.github.io">Saravanan K</a>.</span>
+
     </div>
   </footer>
 
